@@ -1,0 +1,102 @@
+{
+    "action": "GetOrder",
+    "domen": "mws.amazonservices.com",
+    "ListOrders": {
+        "endpoint": "/Orders/",
+        "version": "2013-09-01",
+        "params": {
+            "CreatedAfter": "2016-06-28",
+            "OrderStatus.id.1": "Shipped",
+            "MarketplaceId.id.1": "AZ4B0ZS3LGLX",
+            "MarketplaceId.id.2": "A2SMC08ZTYKXKX",
+            "MarketplaceId.id.3": "A2EUQ1WTGCTBG2",
+            "MarketplaceId.id.4": "ATVPDKIKX0DER",
+            "MarketplaceId.id.5": "A1AM78C64UM0Y8",
+            "FulfillmentChannel.id.1": "AFN"
+        }
+    },
+    "ListMarketplaceParticipations": {
+        "endpoint": "/Sellers/",
+        "version": "2011-07-01",
+        "params": { }
+    },
+    "GetOrder": {
+        "endpoint": "/Orders/",
+        "version": "2013-09-01",
+        "params": {
+            "AmazonOrderId.Id.1": "702-6878032-1382621"
+        }
+    },
+    "ListAllFulfillmentOrders": {
+        "endpoint": "/FulfillmentOutboundShipment/",
+        "version": "2010-10-01",
+        "params": {
+            "QueryStartDateTime": "2015-01-01"
+        }
+    },
+    "GetFulfillmentOrder": {
+        "endpoint": "/FulfillmentOutboundShipment/",
+        "version": "2010-10-01",
+        "params": {
+            "SellerFulfillmentOrderId": "9JD0657655271335P"
+        }
+    },
+    "GetPackageTrackingDetails": {
+        "endpoint": "/FulfillmentOutboundShipment/",
+        "version": "2010-10-01",
+        "params": {
+            "PackageNumber": "109495970"
+        }
+    },
+    "ListInboundShipments": {
+        "endpoint": "/FulfillmentInboundShipment/",
+        "version": "2010-10-01",
+        "params": {
+            "ShipmentStatusList.member.1": "WORKING",
+            "ShipmentStatusList.member.2": "SHIPPED",
+            "ShipmentStatusList.member.3": "IN_TRANSIT",
+            "ShipmentStatusList.member.4": "DELIVERED",
+            "ShipmentStatusList.member.5": "CHECKED_IN",
+            "ShipmentStatusList.member.6": "RECEIVING",
+            "ShipmentStatusList.member.7": "CLOSED",
+            "ShipmentStatusList.member.8": "CANCELLED",
+            "ShipmentStatusList.member.9": "DELETED",
+            "ShipmentStatusList.member.10": "ERROR",
+            "LastUpdatedAfter": "2015-01-01",
+            "LastUpdatedBefore": "2017-01-01"
+        }
+    },
+    "ListInboundShipmentItems": {
+        "endpoint": "/FulfillmentInboundShipment/",
+        "version": "2010-10-01",
+        "params": {
+            "ShipmentId": "FBA2FM2W9Y"
+        }
+    },
+    "GetTransportContent": {
+        "endpoint": "/FulfillmentInboundShipment/",
+        "version": "2010-10-01",
+        "params": {
+            "ShipmentId": "FBA2FM2W9Y"
+        }
+    },
+    "GetShipment": {
+        "endpoint": "/MerchantFulfillment/",
+        "version": "2015-06-01",
+        "params": {
+            "ShipmentId": "FBA2FM2W9Y"
+        }
+    },
+    "GetServiceStatus": {
+        "endpoint": "/MerchantFulfillment/",
+        "version": "2015-06-01",
+        "params": {}
+    },
+    "ListOrderItems": {
+        "endpoint": "/Orders/",
+        "version": "2013-09-01",
+        "params": {
+            "AmazonOrderId": "106-5031393-2522631"
+        }
+    }
+}
